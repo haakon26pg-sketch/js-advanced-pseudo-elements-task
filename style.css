@@ -1,13 +1,22 @@
 #dot-list li::after {
-    color: blue;
+    content: "★";
+    color: orange;
     font-size: 16px;
     margin-left: 10px;
 }
 
-#dot-list li:hover {
-    color: purple;
-    cursor: pointer;
-    font-weight: bold;
+
+#dot-list li:first-child {
+    color: red;
+    background-color: lightblue;
+}
+
+#dot-list li:last-child {
+    color: green;
+}
+
+#dot-list li:nth-child(odd):not(:first-child) {
+    background-color: lightgray;
 }
 
 #header-title::before {
@@ -17,4 +26,49 @@
     height: 25px;
     display:inline-block;
     margin-right: 10px;
+}
+
+.content-section {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.box {
+    padding: 30px;
+    border-radius: 8px;
+    background-color: lightgray;
+}
+
+.box:nth-child(1) {
+    background-color: lightblue;
+}
+
+.box:nth-child(2) {
+    background-color: lightgreen;
+}
+
+.box:nth-child(3) {
+    background-color: lightcoral;
+}
+
+#action-button {
+    padding: 12px 24px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+#action-button:hover {
+    background: darkblue;
+}
+
+#dot-list li:hover {
+    color: purple;
+    cursor: pointer;
+    font-weight: bold;
 }
