@@ -1,3 +1,5 @@
+
+// add functionality to the button. goal is to give the user cookies when clicked
 const cookieButton = document.querySelector("#action-button");
 
 cookieButton.addEventListener("click", () => {
