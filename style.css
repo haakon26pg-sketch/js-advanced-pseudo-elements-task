@@ -1,0 +1,20 @@
+#dot-list li::after {
+    color: blue;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#dot-list li:hover {
+    color: purple;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#header-title::before {
+    content: "";
+    background-color: rgb(189, 27, 27);
+    width: 5px;
+    height: 25px;
+    display:inline-block;
+    margin-right: 10px;
+}
